@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TtopAcademy.API", "TtopAcademy.API\TtopAcademy.API.csproj", "{8B9D8E55-BF07-4B28-898D-842FBD7694E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TtopAcademy.UnitTests", "TtopAcademy.UnitTests\TtopAcademy.UnitTests.csproj", "{FCBD1A9C-F06C-4F42-B0B0-699738085B08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B9D8E55-BF07-4B28-898D-842FBD7694E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B9D8E55-BF07-4B28-898D-842FBD7694E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B9D8E55-BF07-4B28-898D-842FBD7694E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B9D8E55-BF07-4B28-898D-842FBD7694E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCBD1A9C-F06C-4F42-B0B0-699738085B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCBD1A9C-F06C-4F42-B0B0-699738085B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCBD1A9C-F06C-4F42-B0B0-699738085B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCBD1A9C-F06C-4F42-B0B0-699738085B08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6E4C343-83C7-4C63-8170-618E117BAC68}
+	EndGlobalSection
+EndGlobal
