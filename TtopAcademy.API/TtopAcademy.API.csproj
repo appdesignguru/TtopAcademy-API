@@ -227,7 +227,6 @@
     <Compile Include="ApplicationCore\Repositories\ITopicRepository.cs" />
     <Compile Include="ApplicationCore\Repositories\IVideoRepository.cs" />
     <Compile Include="ApplicationCore\Services\IEmailService.cs" />
-    <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\IocConfig.cs" />
@@ -273,7 +272,6 @@
     <Compile Include="Controllers\PracticeQuestionsController.cs" />
     <Compile Include="Controllers\SubjectsController.cs" />
     <Compile Include="Controllers\TopicsController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Controllers\VideoController.cs" />
     <Compile Include="Controllers\VideosController.cs" />
     <Compile Include="Global.asax.cs">

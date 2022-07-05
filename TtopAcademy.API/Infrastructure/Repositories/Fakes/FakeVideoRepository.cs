@@ -8,10 +8,12 @@ using TtopAcademy.API.ApplicationCore.Repositories;
 
 namespace TtopAcademy.API.Infrastructure.Repositories.Fakes
 {
+    /// <summary> Fake video repository implemetation class. Used for unit testing. </summary>
     public class FakeVideoRepository : IVideoRepository
     {
         private readonly List<Video> videos;
 
+        /// <summary> Constructs a new FakeVideoRepository with given parameter. </summary>
         public FakeVideoRepository(List<Video> videos)
         {
             this.videos = videos;

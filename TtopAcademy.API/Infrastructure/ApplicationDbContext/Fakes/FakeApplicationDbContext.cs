@@ -10,8 +10,11 @@ using TtopAcademy.API.ApplicationCore.Entities.PracticeQuestions;
 
 namespace TtopAcademy.API.Infrastructure.ApplicationDbContext.Fakes
 {
+    /// <summary> Fake implementation class for ApplicationDbContext. Used for unit testing. </summary>
     public class FakeApplicationDbContext : IApplicationDbContext
     {
+
+        /// <summary> Constructs a new FakeApplicationDbContext. </summary>
         public FakeApplicationDbContext()
         {
             this.Otps = new FakeOtbDbSet();

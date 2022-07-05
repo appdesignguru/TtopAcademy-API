@@ -8,10 +8,12 @@ using TtopAcademy.API.ApplicationCore.Repositories;
 
 namespace TtopAcademy.API.Infrastructure.Repositories.Fakes
 {
+    /// <summary> Fake otp repository implemetation class. Used for unit testing. </summary>
     public class FakeOtpRepository : IOtpRepository
     {
-        private List<Otp> otpList; 
+        private readonly List<Otp> otpList;
 
+        /// <summary> Constructs a new FakeOtpRepository with given parameter. </summary>
         public FakeOtpRepository(List<Otp> otpList)
         {
             this.otpList = otpList;

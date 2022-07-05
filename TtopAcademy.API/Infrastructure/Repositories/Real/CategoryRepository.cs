@@ -9,7 +9,7 @@ using TtopAcademy.API.ApplicationCore.Repositories;
 
 namespace TtopAcademy.API.Infrastructure.Repositories.Real
 {
-    /// <summary> Category repository class. </summary> 
+    /// <summary> Category repository implementation class. </summary> 
     public class CategoryRepository : ICategoryRepository, IDisposable
     {
         private readonly IApplicationDbContext context;

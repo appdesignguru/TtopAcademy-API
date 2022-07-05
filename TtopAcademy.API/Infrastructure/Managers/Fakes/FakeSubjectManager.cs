@@ -8,15 +8,16 @@ using TtopAcademy.API.ApplicationCore.Managers;
 
 namespace TtopAcademy.API.Infrastructure.Managers.Fakes
 {
+    /// <summary> Fake subject manager implemetation class. Used for unit testing. </summary>
     public class FakeSubjectManager : ISubjectManager
     {
-        private List<CategorySubject> categorySubjects;
+        private readonly List<CategorySubject> categorySubjects;
 
+        /// <summary> Constructs a new FakeSubjectManager with given parameter. </summary>
         public FakeSubjectManager(List<CategorySubject> categorySubjects)
         {
             this.categorySubjects = categorySubjects;
         }
-
 
         public async Task<IEnumerable<Subject>> GetAllSubjectsAsync()
         {

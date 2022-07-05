@@ -9,10 +9,12 @@ using TtopAcademy.API.ApplicationCore.Repositories;
 
 namespace TtopAcademy.API.Infrastructure.Repositories.Real.PracticeQuestions
 {
+    /// <summary> Chemistry practice question repository implementation class. </summary> 
     public class ChemistryPracticeQuestionRepository : IPracticeQuestionRepository, IDisposable
     {
         private readonly IApplicationDbContext context;
 
+        /// <summary> Constructs a new chemistry practice question repository with given parameter. </summary> 
         public ChemistryPracticeQuestionRepository(IApplicationDbContext context)
         {
             this.context = context;

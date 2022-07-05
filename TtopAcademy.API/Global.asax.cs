@@ -10,16 +10,17 @@ using TtopAcademy.API.App_Start;
 
 namespace TtopAcademy.API
 {
+    /// <summary> Entry point for the web api. </summary> 
     public class WebApiApplication : System.Web.HttpApplication
     {
+        /// <summary> Configures the needed dependencies. </summary>
         protected void Application_Start()
         {
-            IocConfig.Configure();
+            IocConfig.Configure(); // Dependency injection class
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

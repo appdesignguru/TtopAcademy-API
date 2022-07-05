@@ -12,7 +12,6 @@ using TtopAcademy.API.ApplicationCore.Managers;
 using TtopAcademy.API.ApplicationCore.Repositories;
 using TtopAcademy.API.ApplicationCore.Services;
 using TtopAcademy.API.Infrastructure.Factories.Real;
-using TtopAcademy.API.Infrastructure.Managers.Fakes;
 using TtopAcademy.API.Infrastructure.Managers.Real;
 using TtopAcademy.API.Infrastructure.Repositories.Fakes;
 using TtopAcademy.API.Infrastructure.Repositories.Real;
@@ -21,8 +20,10 @@ using TtopAcademy.API.Models;
 
 namespace TtopAcademy.API.App_Start
 {
+    /// <summary> Depedency injection class. This class is called in the WebApiApplication class in Global.asax.cs file. </summary>
     public class IocConfig
     {
+        /// <summary> Injects the implementation classes to the interface classes. </summary>
         public static void Configure()
         {
             var builder = new ContainerBuilder();

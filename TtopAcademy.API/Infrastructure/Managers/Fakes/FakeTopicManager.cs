@@ -8,10 +8,12 @@ using TtopAcademy.API.ApplicationCore.Managers;
 
 namespace TtopAcademy.API.Infrastructure.Managers.Fakes
 {
+    /// <summary> Fake topic manager implemetation class. Used for unit testing. </summary>
     public class FakeTopicManager : ITopicManager
     {
-        private List<CategorySubjectTopic> categorySubjectTopics;
+        private readonly List<CategorySubjectTopic> categorySubjectTopics;
 
+        /// <summary> Constructs a new FakeTopicManager with given parameter. </summary>
         public FakeTopicManager(List<CategorySubjectTopic> categorySubjectTopics)
         {
             this.categorySubjectTopics = categorySubjectTopics;

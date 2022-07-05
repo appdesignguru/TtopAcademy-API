@@ -13,9 +13,10 @@ using TtopAcademy.API.Models;
 
 namespace TtopAcademy.API
 {
+    /// <summary> Startup class. </summary>
     public partial class Startup
     {
-
+        /// <summary> Configures the app. </summary>
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);

@@ -12,17 +12,20 @@ using TutorField.API.Models;
 
 namespace TtopAcademy.API.Controllers
 {
+    /// <summary> Controller for videos. </summary>
     [Authorize(Roles = "Adminstrator")]
     public class VideosController : ApiController
     {
-        private readonly IVideoManager videoManager; 
+        private readonly IVideoManager videoManager;
 
+        /// <summary> Constructs a new videos controller with given parameter. </summary>
         public VideosController(IVideoManager videoManager)
         {
             this.videoManager = videoManager;
         }
 
-        // GET: api/Videos/CategoryID-SubjectID-TopicID 
+        /// <summary> Returns all videos for the given concatenated id prameter. 
+        ///     Route is GET: api/Videos/CategoryID-SubjectID-TopicID</summary>
         [AllowAnonymous] 
         public async Task<IEnumerable<Video>> Get(string id)
         {
@@ -36,7 +39,7 @@ namespace TtopAcademy.API.Controllers
             return videos;  
         }
 
-        // POST: api/Videos
+        /// <summary> Saves the given data model. Route is POST: api/Videos. </summary> 
         public async Task<IHttpActionResult> Post(VideoBindingModel model)
         {
             if (!ModelState.IsValid)
@@ -56,7 +59,8 @@ namespace TtopAcademy.API.Controllers
             return Ok(dbEntry);
         }
 
-        // PUT: api/Videos/VideoID
+        /// <summary> Updates the given data model with the specified videoID. 
+        ///     Route is PUT: api/Videos/VideoID. </summary> 
         public async Task<IHttpActionResult> Put(int id, VideoBindingModel model)
         {
             if (!ModelState.IsValid)
@@ -76,7 +80,8 @@ namespace TtopAcademy.API.Controllers
             return Ok(); 
         }
 
-        // DELETE: api/Videos/CategoryID-SubjectID-TopicID-VideoID
+        /// <summary> Deletes the video with given concatenated string id parameter. Route is
+        ///    DELETE: api/Videos/CategoryID-SubjectID-TopicID-VideoID </summary>
         public async Task<IHttpActionResult> Delete(string id) 
         {
             string[] ids = id.Split('-');

@@ -25,11 +25,13 @@ namespace TtopAcademy.API.Models
     /// <summary> ApplicationDbContext implementation class for declaring database tables. </summary>
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>, IApplicationDbContext
     {
+        /// <summary> Constructs a new ApplicationDbContext. </summary>
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
         
+        /// <summary> Creates a new ApplicationDbContext. </summary>
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();

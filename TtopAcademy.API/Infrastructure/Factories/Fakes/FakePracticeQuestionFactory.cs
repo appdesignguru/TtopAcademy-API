@@ -9,10 +9,12 @@ using TtopAcademy.API.Infrastructure.Repositories.Fakes;
 
 namespace TtopAcademy.API.Infrastructure.Factories.Fakes
 {
+    /// <summary> Fake practice question factory implementation class. Used unit testing. </summary>
     public class FakePracticeQuestionFactory : IPracticeQuestionFactory
     {
-        private List<PracticeQuestion> practiceQuestions;
+        private readonly List<PracticeQuestion> practiceQuestions;
 
+        /// <summary> Constructs a new FakePracticeQuestionFactory with given parameter. </summary>
         public FakePracticeQuestionFactory(List<PracticeQuestion> practiceQuestions)
         {
             this.practiceQuestions = practiceQuestions;

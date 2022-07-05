@@ -8,14 +8,16 @@ using TtopAcademy.API.ApplicationCore.Repositories;
 
 namespace TtopAcademy.API.Infrastructure.Repositories.Fakes
 {
+    /// <summary> Fake subject repository implemetation class. Used for unit testing. </summary>
     public class FakeSubjectRepository : ISubjectRepository
     {
-        private readonly List<Subject> subjects; 
+        private readonly List<Subject> subjects;
 
+        /// <summary> Constructs a new FakeSubjectRepository with given parameter. </summary>
         public FakeSubjectRepository(List<Subject> subjects)
         {
             this.subjects = subjects;
-        }
+        } 
 
         public async Task<IEnumerable<Subject>> GetAllSubjectsAsync()
         {

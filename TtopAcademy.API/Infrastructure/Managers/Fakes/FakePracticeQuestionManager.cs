@@ -8,10 +8,12 @@ using TtopAcademy.API.ApplicationCore.Managers;
 
 namespace TtopAcademy.API.Infrastructure.Managers.Fakes
 {
+    /// <summary> Fake practice question manager implemetation class. Used for unit testing. </summary>
     public class FakePracticeQuestionManager : IPracticeQuestionManager
     {
-        private readonly List<PracticeQuestion> practiceQuestions; 
+        private readonly List<PracticeQuestion> practiceQuestions;
 
+        /// <summary> Constructs a new FakePracticeQuestionManager with given parameter. </summary>
         public FakePracticeQuestionManager(List<PracticeQuestion> practiceQuestions)
         {
             this.practiceQuestions = practiceQuestions;

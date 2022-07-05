@@ -8,10 +8,12 @@ using TtopAcademy.API.ApplicationCore.Managers;
 
 namespace TtopAcademy.API.Infrastructure.Managers.Fakes
 {
+    /// <summary> Fake video manager implemetation class. Used for unit testing. </summary>
     public class FakeVideoManager : IVideoManager
     {
         private readonly List<CategorySubjectTopicVideo> categorySubjectTopicVideos;
 
+        /// <summary> Constructs a new FakeVideoManager with given parameter. </summary>
         public FakeVideoManager(List<CategorySubjectTopicVideo> categorySubjectTopicVideos)
         {
             this.categorySubjectTopicVideos = categorySubjectTopicVideos;

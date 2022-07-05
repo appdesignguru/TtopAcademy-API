@@ -8,10 +8,12 @@ using TtopAcademy.API.ApplicationCore.Repositories;
 
 namespace TtopAcademy.API.Infrastructure.Repositories.Fakes
 {
+    /// <summary> Fake practice question repository implemetation class. Used for unit testing. </summary>
     public class FakePracticeQuestionRepository : IPracticeQuestionRepository
     {
         private readonly List<PracticeQuestion> practiceQuestions;
 
+        /// <summary> Constructs a new FakePracticeQuestionRepository with given parameter. </summary>
         public FakePracticeQuestionRepository(List<PracticeQuestion> practiceQuestions)
         {
             this.practiceQuestions = practiceQuestions;

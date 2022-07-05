@@ -8,10 +8,12 @@ using TtopAcademy.API.ApplicationCore.Repositories;
 
 namespace TtopAcademy.API.Infrastructure.Repositories.Fakes
 {
+    /// <summary> Fake CategorySubjectTopicVideo repository implemetation class. Used for unit testing. </summary>
     public class FakeCategorySubjectTopicVideoRepository : ICategorySubjectTopicVideoRepository
     {
         private readonly List<CategorySubjectTopicVideo> categorySubjectTopicVideos;
 
+        /// <summary> Constructs a new FakeCategorySubjectTopicVideoRepository with given parameter. </summary>
         public FakeCategorySubjectTopicVideoRepository(List<CategorySubjectTopicVideo> categorySubjectTopicVideos)
         {
             this.categorySubjectTopicVideos = categorySubjectTopicVideos;
