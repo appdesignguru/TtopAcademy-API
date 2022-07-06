@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 using System.Web.Http;
 using TtopAcademy.API.ApplicationCore.Entities;
 using TtopAcademy.API.ApplicationCore.Managers;
-using TtopAcademy.API.ApplicationCore.Repositories;
 using TutorField.API.Models;
 
 namespace TtopAcademy.API.Controllers
@@ -47,7 +46,7 @@ namespace TtopAcademy.API.Controllers
                 return BadRequest(ModelState);
             }
             
-            Video video =new Video {
+            Video video = new Video {
                 Number = model.Number, YoutubeID = model.YoutubeID,
                 Title = model.Title, Size = model.Size,
                 SolutionVideoYoutubeID = model.SolutionVideoYoutubeID,
