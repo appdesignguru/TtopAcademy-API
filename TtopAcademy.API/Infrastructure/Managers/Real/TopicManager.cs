@@ -27,9 +27,9 @@ namespace TtopAcademy.API.Infrastructure.Managers.Real
         }
 
 
-        public Task<IEnumerable<Topic>> GetAllTopicsAsync()
+        public async Task<IEnumerable<Topic>> GetAllTopicsAsync()
         {
-            return topicRepository.GetAllTopicsAsync();
+            return await topicRepository.GetAllTopicsAsync(); 
         }
 
         public async Task<IEnumerable<Topic>> GetTopicsAsync(int categoryID, int subjectID)

@@ -24,7 +24,7 @@ namespace TtopAcademy.API.Controllers
         }
 
         /// <summary> Returns all videos for the given concatenated id prameter. 
-        ///     Route is GET: api/Videos/CategoryID-SubjectID-TopicID</summary>
+        ///     Route is GET: api/Videos/CategoryID-SubjectID-TopicID. </summary>
         [AllowAnonymous] 
         public async Task<IEnumerable<Video>> Get(string id)
         {
