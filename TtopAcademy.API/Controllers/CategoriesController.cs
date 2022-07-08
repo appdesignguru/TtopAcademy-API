@@ -15,12 +15,12 @@ namespace TtopAcademy.API.Controllers
     [Authorize(Roles = "Adminstrator")] 
     public class CategoriesController : ApiController
     {
-        private readonly ICategoryRepository repository;
+        private readonly ICategoryRepository categoryRepository;
 
         /// <summary> Constructs a new categories controller with given parameter. </summary>
-        public CategoriesController(ICategoryRepository repository)
+        public CategoriesController(ICategoryRepository categoryRepository)
         {
-            this.repository = repository;
+            this.categoryRepository = categoryRepository;
         }
 
         /// <summary> Returns all categories.
@@ -28,7 +28,7 @@ namespace TtopAcademy.API.Controllers
         [AllowAnonymous] 
         public async Task<IEnumerable<Category>> Get()
         {
-            return await repository.GetAllCategoriesAsync();
+            return await categoryRepository.GetAllCategoriesAsync();
         }
 
         /// <summary> Saves the given data model. 
@@ -39,7 +39,7 @@ namespace TtopAcademy.API.Controllers
             {
                 return BadRequest(ModelState);
             }
-            Category category = await repository.SaveCategoryAsync(new Category
+            Category category = await categoryRepository.SaveCategoryAsync(new Category
             {
                 Number = model.Number,
                 Name = model.Name,
@@ -55,7 +55,7 @@ namespace TtopAcademy.API.Controllers
             {
                 return BadRequest(ModelState);
             }
-            await repository.UpdateCategoryAsync(new Category
+            await categoryRepository.UpdateCategoryAsync(new Category
             {
                 CategoryID = id,
                 Number = model.Number,
@@ -68,7 +68,7 @@ namespace TtopAcademy.API.Controllers
         ///     Route is DELETE: api/Categories/CategoryID </summary>  
         public async Task<IHttpActionResult> Delete(int id)
         {
-            Category category = await repository.DeleteCategoryAsync(id);
+            Category category = await categoryRepository.DeleteCategoryAsync(id);
             if (category == null)
             {
                 return BadRequest("CategoryID is invalid");
