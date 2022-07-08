@@ -13,7 +13,7 @@ using TtopAcademy.API.Controllers;
 using TtopAcademy.API.Infrastructure.Managers.Fakes;
 using TtopAcademy.API.Infrastructure.Managers.Real;
 using TtopAcademy.API.Infrastructure.Repositories.Fakes;
-using TutorField.API.Models;
+using TtopAcademy.API.Models;
 
 namespace TtopAcademy.UnitTests.Controllers
 {

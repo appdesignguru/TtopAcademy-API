@@ -1,8 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Results;
@@ -10,7 +6,7 @@ using TtopAcademy.API.ApplicationCore.Entities;
 using TtopAcademy.API.ApplicationCore.Managers;
 using TtopAcademy.API.Controllers;
 using TtopAcademy.API.Infrastructure.Managers.Fakes;
-using TutorField.API.Models;
+using TtopAcademy.API.Models;
 
 namespace TtopAcademy.UnitTests.Controllers
 {

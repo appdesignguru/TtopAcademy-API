@@ -6,7 +6,7 @@ using System.Web;
 using TtopAcademy.API.ApplicationCore.Entities;
 using TtopAcademy.API.ApplicationCore.Entities.PracticeQuestions;
 
-namespace TutorField.API.Models
+namespace TtopAcademy.API.Models  
 {
     /// <summary> API Binding model for one time passord (OTP). </summary>
     public class OtpBindingModel 

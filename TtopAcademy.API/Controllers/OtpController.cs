@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using TtopAcademy.API.ApplicationCore.Managers;
-using TutorField.API.Models;
+using TtopAcademy.API.Models;
 
 namespace TtopAcademy.API.Controllers
 {

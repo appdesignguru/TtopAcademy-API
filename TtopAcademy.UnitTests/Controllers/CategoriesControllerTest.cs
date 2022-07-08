@@ -9,7 +9,7 @@ using TtopAcademy.API.ApplicationCore.Entities;
 using TtopAcademy.API.Controllers;
 using TtopAcademy.API.Infrastructure.Repositories.Fakes;
 using TtopAcademy.API.ApplicationCore.Repositories;
-using TutorField.API.Models;
+using TtopAcademy.API.Models;
 using System.Web.Http;
 
 namespace TtopAcademy.UnitTests.Controllers
